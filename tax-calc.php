@@ -33,10 +33,10 @@ function calc_tax($cart_object) {
       * This is where I begin "connecting to taxware" to get the data
      */
      $url = "https://sstwsuat.taxware.net:7443/Twe/api/rest/calcTax/doc";   // taxware gtd api endpoint
-     $usrname = "restuat@ACBJ";    // taxware gtd api username (test or prod)
-     $pswrd = "password";
-     $hmacKey = "d6e6e761-bfbc-453f-a751-863524d13da4";      // 000xx0xx-000x-00x0-x00x-0xx0xxx0000x
-     $orgCd = "BIZBOOKS";   // ORGCD (UCASE)
+     $usrname = "xxxxxx@XXXX";    // taxware gtd api username (test or prod)
+     $pswrd = "********";
+     $hmacKey = "x0x0x000-xxxx-000x-x000-000000x00xx0";      // 000xx0xx-000x-00x0-x00x-0xx0xxx0000x
+     $orgCd = "XXXXXXXX";   // ORGCD (UCASE)
      // $isoDate = date(DateTime::ISO8601);
      $today = gmdate('Y-m-d H:i:s.Z', time());
      $isoDate = date('c', strtotime($today));
